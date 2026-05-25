@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+@media(max-width:768px){
+
+    .cards-filmes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-filme{
+        width: 90%;
+    }
+
+    .categoria-filmes h2{
+        font-size: 28px;
+        text-align: center;
+    }
+
+}
+
 .card-filme{
     background-color: #1f1f1f;
     width: 250px;
