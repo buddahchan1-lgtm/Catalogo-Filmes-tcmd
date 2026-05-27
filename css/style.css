@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* Header */
+
+.topo{
+    background-color: #1f1f1f;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.topo h1{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+/* Barra de Pesquisa */
+
+.barra-pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.barra-pesquisa input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.barra-pesquisa input::placeholder{
+    color: #b3b3b3;
+}
+
+.barra-pesquisa button{
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff3c3c;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.barra-pesquisa button:hover{
+    background-color: #d62828;
+    transform: scale(1.08);
+}
+
+/* Seção de Filmes */
+
+.categoria-filmes{
+    padding: 40px;
+}
+
+.categoria-filmes h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ff3c3c;
+}
+
+/* Cards */
+
+.cards-filmes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-filme{
+    background-color: #1f1f1f;
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.card-filme:hover{
+    transform: scale(1.05);
+}
+
+.card-filme img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-filme h3{
+    padding: 15px 15px 5px;
+    font-size: 24px;
+}
+
+.card-filme p{
+    padding: 0 15px 20px;
+    color: #b3b3b3;
+}
+
+/* Responsividade */
+
+@media(max-width:768px){
+
+    .categoria-filmes{
+        padding: 20px;
+    }
+
+    .categoria-filmes h2{
+        font-size: 28px;
+    }
+
+    .cards-filmes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-filme{
+        width: 90%;
+    }
+
+    .barra-pesquisa{
+        width: 95%;
+    }
+
+}
